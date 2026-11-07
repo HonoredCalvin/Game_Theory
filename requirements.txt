@@ -1,0 +1,5 @@
+numpy
+pandas
+matplotlib
+networkx
+nashpy   # optional - used only for cross-validation

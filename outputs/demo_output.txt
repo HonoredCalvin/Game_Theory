@@ -1,0 +1,296 @@
+
+======================================================================
+GAME: Prisoner's Dilemma
+======================================================================
+             Cooperate  Defect
+Row \ Column                  
+Cooperate       (3, 3)  (0, 5)
+Defect          (5, 0)  (1, 1)
+
+Best responses -> {'row': {'Cooperate': ['Defect'], 'Defect': ['Defect']}, 'col': {'Cooperate': ['Defect'], 'Defect': ['Defect']}}
+
+Dominance (strict): {'row': {'dominated': {'Cooperate': 'Defect'}, 'dominant': 'Defect'}, 'col': {'dominated': {'Cooperate': 'Defect'}, 'dominant': 'Defect'}}
+
+Dominance (weak): {'row': {'dominated': {'Cooperate': 'Defect'}, 'dominant': 'Defect'}, 'col': {'dominated': {'Cooperate': 'Defect'}, 'dominant': 'Defect'}}
+
+Iterated elimination of strictly dominated strategies:
+  - Row: 'Cooperate' is dominated by 'Defect' -> eliminated
+  - Column: 'Cooperate' is dominated by 'Defect' -> eliminated
+  Remaining: Row ['Defect'] | Column ['Defect']
+
+Pure-strategy Nash equilibria: [('Defect', 'Defect')]
+All Nash equilibria (support enumeration):
+  * Row [Defect: 1.000]  |  Column [Defect: 1.000]  -> payoffs (1.000, 1.000)
+2x2 closed-form mixed equilibrium (p, q): None
+(Nashpy not installed - cross-check skipped)
+
+======================================================================
+GAME: Matching Pennies
+======================================================================
+                Heads    Tails
+Row \ Column                  
+Heads         (1, -1)  (-1, 1)
+Tails         (-1, 1)  (1, -1)
+
+Best responses -> {'row': {'Heads': ['Heads'], 'Tails': ['Tails']}, 'col': {'Heads': ['Tails'], 'Tails': ['Heads']}}
+
+Dominance (strict): {'row': {'dominated': {}, 'dominant': None}, 'col': {'dominated': {}, 'dominant': None}}
+
+Dominance (weak): {'row': {'dominated': {}, 'dominant': None}, 'col': {'dominated': {}, 'dominant': None}}
+
+Iterated elimination of strictly dominated strategies:
+  - (nothing can be eliminated)
+  Remaining: Row ['Heads', 'Tails'] | Column ['Heads', 'Tails']
+
+Pure-strategy Nash equilibria: none
+All Nash equilibria (support enumeration):
+  * Row [Heads: 0.500, Tails: 0.500]  |  Column [Heads: 0.500, Tails: 0.500]  -> payoffs (-0.000, -0.000)
+2x2 closed-form mixed equilibrium (p, q): (0.5, 0.5)
+(Nashpy not installed - cross-check skipped)
+
+======================================================================
+GAME: Battle of the Sexes
+======================================================================
+               Opera Football
+Row \ Column                 
+Opera         (3, 2)   (0, 0)
+Football      (0, 0)   (2, 3)
+
+Best responses -> {'row': {'Opera': ['Opera'], 'Football': ['Football']}, 'col': {'Opera': ['Opera'], 'Football': ['Football']}}
+
+Dominance (strict): {'row': {'dominated': {}, 'dominant': None}, 'col': {'dominated': {}, 'dominant': None}}
+
+Dominance (weak): {'row': {'dominated': {}, 'dominant': None}, 'col': {'dominated': {}, 'dominant': None}}
+
+Iterated elimination of strictly dominated strategies:
+  - (nothing can be eliminated)
+  Remaining: Row ['Opera', 'Football'] | Column ['Opera', 'Football']
+
+Pure-strategy Nash equilibria: [('Opera', 'Opera'), ('Football', 'Football')]
+All Nash equilibria (support enumeration):
+  * Row [Opera: 1.000]  |  Column [Opera: 1.000]  -> payoffs (3.000, 2.000)
+  * Row [Football: 1.000]  |  Column [Football: 1.000]  -> payoffs (2.000, 3.000)
+  * Row [Opera: 0.600, Football: 0.400]  |  Column [Opera: 0.400, Football: 0.600]  -> payoffs (1.200, 1.200)
+2x2 closed-form mixed equilibrium (p, q): (0.6, 0.4)
+(Nashpy not installed - cross-check skipped)
+
+======================================================================
+GAME: Stag Hunt
+======================================================================
+                Stag    Hare
+Row \ Column                
+Stag          (4, 4)  (0, 3)
+Hare          (3, 0)  (3, 3)
+
+Best responses -> {'row': {'Stag': ['Stag'], 'Hare': ['Hare']}, 'col': {'Stag': ['Stag'], 'Hare': ['Hare']}}
+
+Dominance (strict): {'row': {'dominated': {}, 'dominant': None}, 'col': {'dominated': {}, 'dominant': None}}
+
+Dominance (weak): {'row': {'dominated': {}, 'dominant': None}, 'col': {'dominated': {}, 'dominant': None}}
+
+Iterated elimination of strictly dominated strategies:
+  - (nothing can be eliminated)
+  Remaining: Row ['Stag', 'Hare'] | Column ['Stag', 'Hare']
+
+Pure-strategy Nash equilibria: [('Stag', 'Stag'), ('Hare', 'Hare')]
+All Nash equilibria (support enumeration):
+  * Row [Stag: 1.000]  |  Column [Stag: 1.000]  -> payoffs (4.000, 4.000)
+  * Row [Hare: 1.000]  |  Column [Hare: 1.000]  -> payoffs (3.000, 3.000)
+  * Row [Stag: 0.750, Hare: 0.250]  |  Column [Stag: 0.750, Hare: 0.250]  -> payoffs (3.000, 3.000)
+2x2 closed-form mixed equilibrium (p, q): (0.75, 0.75)
+(Nashpy not installed - cross-check skipped)
+
+======================================================================
+GAME: Rock-Paper-Scissors
+======================================================================
+                 Rock    Paper Scissors
+Row \ Column                           
+Rock           (0, 0)  (-1, 1)  (1, -1)
+Paper         (1, -1)   (0, 0)  (-1, 1)
+Scissors      (-1, 1)  (1, -1)   (0, 0)
+
+Best responses -> {'row': {'Rock': ['Paper'], 'Paper': ['Scissors'], 'Scissors': ['Rock']}, 'col': {'Rock': ['Paper'], 'Paper': ['Scissors'], 'Scissors': ['Rock']}}
+
+Dominance (strict): {'row': {'dominated': {}, 'dominant': None}, 'col': {'dominated': {}, 'dominant': None}}
+
+Dominance (weak): {'row': {'dominated': {}, 'dominant': None}, 'col': {'dominated': {}, 'dominant': None}}
+
+Iterated elimination of strictly dominated strategies:
+  - (nothing can be eliminated)
+  Remaining: Row ['Rock', 'Paper', 'Scissors'] | Column ['Rock', 'Paper', 'Scissors']
+
+Pure-strategy Nash equilibria: none
+All Nash equilibria (support enumeration):
+  * Row [Rock: 0.333, Paper: 0.333, Scissors: 0.333]  |  Column [Rock: 0.333, Paper: 0.333, Scissors: 0.333]  -> payoffs (-0.000, -0.000)
+(Nashpy not installed - cross-check skipped)
+
+======================================================================
+GAME: IESDS textbook example
+======================================================================
+                Left  Center   Right
+Row \ Column                        
+Up            (4, 3)  (5, 1)  (6, 2)
+Middle        (2, 1)  (8, 4)  (3, 6)
+Down          (3, 0)  (9, 6)  (2, 8)
+
+Best responses -> {'row': {'Left': ['Up'], 'Center': ['Down'], 'Right': ['Up']}, 'col': {'Up': ['Left'], 'Middle': ['Right'], 'Down': ['Right']}}
+
+Dominance (strict): {'row': {'dominated': {}, 'dominant': None}, 'col': {'dominated': {'Center': 'Right'}, 'dominant': None}}
+
+Dominance (weak): {'row': {'dominated': {}, 'dominant': None}, 'col': {'dominated': {'Center': 'Right'}, 'dominant': None}}
+
+Iterated elimination of strictly dominated strategies:
+  - Column: 'Center' is dominated by 'Right' -> eliminated
+  - Row: 'Middle' is dominated by 'Up' -> eliminated
+  - Row: 'Down' is dominated by 'Up' -> eliminated
+  - Column: 'Right' is dominated by 'Left' -> eliminated
+  Remaining: Row ['Up'] | Column ['Left']
+
+Pure-strategy Nash equilibria: [('Up', 'Left')]
+All Nash equilibria (support enumeration):
+  * Row [Up: 1.000]  |  Column [Left: 1.000]  -> payoffs (4.000, 3.000)
+(Nashpy not installed - cross-check skipped)
+
+======================================================================
+GAME: Cyber Inspection Game
+======================================================================
+                       Attack  Refrain
+Defender \ Attacker                   
+Monitor              (-4, -8)  (-4, 0)
+Ignore               (-10, 6)   (0, 0)
+
+Best responses -> {'row': {'Attack': ['Monitor'], 'Refrain': ['Ignore']}, 'col': {'Monitor': ['Refrain'], 'Ignore': ['Attack']}}
+
+Dominance (strict): {'row': {'dominated': {}, 'dominant': None}, 'col': {'dominated': {}, 'dominant': None}}
+
+Dominance (weak): {'row': {'dominated': {}, 'dominant': None}, 'col': {'dominated': {}, 'dominant': None}}
+
+Iterated elimination of strictly dominated strategies:
+  - (nothing can be eliminated)
+  Remaining: Defender ['Monitor', 'Ignore'] | Attacker ['Attack', 'Refrain']
+
+Pure-strategy Nash equilibria: none
+All Nash equilibria (support enumeration):
+  * Defender [Monitor: 0.429, Ignore: 0.571]  |  Attacker [Attack: 0.400, Refrain: 0.600]  -> payoffs (-4.000, -0.000)
+2x2 closed-form mixed equilibrium (p, q): (0.4286, 0.4)
+(Nashpy not installed - cross-check skipped)
+
+======================================================================
+GAME: Cyber Security Investment Game
+======================================================================
+                    Phishing  Exploit     DDoS
+Defender \ Attacker                           
+Firewall             (-5, 5)  (-5, 2)  (-2, 1)
+IDS                  (-3, 3)  (-3, 4)  (-4, 2)
+NoInvestment         (-6, 6)  (-6, 5)  (-7, 7)
+
+Best responses -> {'row': {'Phishing': ['IDS'], 'Exploit': ['IDS'], 'DDoS': ['Firewall']}, 'col': {'Firewall': ['Phishing'], 'IDS': ['Exploit'], 'NoInvestment': ['DDoS']}}
+
+Dominance (strict): {'row': {'dominated': {'NoInvestment': 'Firewall'}, 'dominant': None}, 'col': {'dominated': {}, 'dominant': None}}
+
+Dominance (weak): {'row': {'dominated': {'NoInvestment': 'Firewall'}, 'dominant': None}, 'col': {'dominated': {}, 'dominant': None}}
+
+Iterated elimination of strictly dominated strategies:
+  - Defender: 'NoInvestment' is dominated by 'Firewall' -> eliminated
+  - Attacker: 'DDoS' is dominated by 'Phishing' -> eliminated
+  - Defender: 'Firewall' is dominated by 'IDS' -> eliminated
+  - Attacker: 'Phishing' is dominated by 'Exploit' -> eliminated
+  Remaining: Defender ['IDS'] | Attacker ['Exploit']
+
+Pure-strategy Nash equilibria: [('IDS', 'Exploit')]
+All Nash equilibria (support enumeration):
+  * Defender [IDS: 1.000]  |  Attacker [Exploit: 1.000]  -> payoffs (-3.000, 4.000)
+(Nashpy not installed - cross-check skipped)
+
+======================================================================
+SCENARIO ANALYSIS - how payoffs change the equilibrium
+======================================================================
+
+-- Varying L (others: c=4.0, g=6.0, f=8.0)
+ L       pure NE  P(Monitor)  P(Attack)  Defender payoff  Attacker payoff
+ 2 Ignore/Attack       0.000      1.000             -2.0              6.0
+ 3 Ignore/Attack       0.000      1.000             -3.0              6.0
+ 4 Ignore/Attack       0.000      1.000             -4.0              6.0
+ 5             -       0.429      0.800             -4.0             -0.0
+ 6             -       0.429      0.667             -4.0             -0.0
+ 8             -       0.429      0.500             -4.0             -0.0
+10             -       0.429      0.400             -4.0             -0.0
+15             -       0.429      0.267             -4.0             -0.0
+20             -       0.429      0.200             -4.0             -0.0
+30             -       0.429      0.133             -4.0             -0.0
+
+-- Varying c (others: L=10.0, g=6.0, f=8.0)
+ c       pure NE  P(Monitor)  P(Attack)  Defender payoff  Attacker payoff
+ 1             -       0.429        0.1             -1.0             -0.0
+ 2             -       0.429        0.2             -2.0             -0.0
+ 3             -       0.429        0.3             -3.0             -0.0
+ 4             -       0.429        0.4             -4.0             -0.0
+ 6             -       0.429        0.6             -6.0             -0.0
+ 8             -       0.429        0.8             -8.0             -0.0
+10 Ignore/Attack       0.000        1.0            -10.0              6.0
+12 Ignore/Attack       0.000        1.0            -10.0              6.0
+
+-- Varying f (others: L=10.0, c=4.0, g=6.0)
+ f pure NE  P(Monitor)  P(Attack)  Defender payoff  Attacker payoff
+ 1       -       0.857        0.4             -4.0             -0.0
+ 2       -       0.750        0.4             -4.0             -0.0
+ 4       -       0.600        0.4             -4.0             -0.0
+ 8       -       0.429        0.4             -4.0             -0.0
+12       -       0.333        0.4             -4.0             -0.0
+16       -       0.273        0.4             -4.0             -0.0
+24       -       0.200        0.4             -4.0             -0.0
+
+-- Varying g (others: L=10.0, c=4.0, f=8.0)
+ g pure NE  P(Monitor)  P(Attack)  Defender payoff  Attacker payoff
+ 1       -       0.111        0.4             -4.0             -0.0
+ 3       -       0.273        0.4             -4.0             -0.0
+ 6       -       0.429        0.4             -4.0             -0.0
+10       -       0.556        0.4             -4.0             -0.0
+15       -       0.652        0.4             -4.0             -0.0
+20       -       0.714        0.4             -4.0             -0.0
+
+Key insights:
+  * P(Attack) = c/L: a higher breach loss L makes the attacker attack LESS often, because the attack rate
+    must keep the defender indifferent between monitoring and ignoring.
+  * P(Monitor) = g/(g+f) depends ONLY on the attacker's payoffs: a bigger penalty f means LESS monitoring.
+  * Regime change at L = c: if monitoring costs at least as much as the loss it prevents, the equilibrium
+    is pure (Ignore, Attack).
+
+======================================================================
+SEQUENTIAL GAME - defender commits first (backward induction)
+======================================================================
+Subgame-perfect strategy: {'Defender': 'Secure', 'Attacker | NotSecure': 'Attack', 'Attacker | Secure': 'Refrain'}
+Equilibrium path: [('Defender', 'Secure'), ('Attacker | Secure', 'Refrain')]
+Equilibrium payoffs (Defender, Attacker): (-2.0, 0)
+Comparison - simultaneous inspection game: defender gets -4.00; sequential commitment game: defender gets -2.00.
+
+======================================================================
+REPEATED GAME - iterated Prisoner's Dilemma (e.g. repeated information sharing)
+======================================================================
+Total scores of ROW strategy vs COLUMN strategy (20 rounds):
+                 AllC  AllD  TitForTat  Grim  SuspiciousTFT
+AllC            60.0   0.0       60.0  60.0           57.0
+AllD           100.0  20.0       24.0  24.0           20.0
+TitForTat       60.0  19.0       60.0  60.0           50.0
+Grim            60.0  19.0       60.0  60.0           23.0
+SuspiciousTFT   62.0  20.0       50.0  23.0           20.0
+
+Tournament ranking:
+ TitForTat        249.0
+AllC             237.0
+Grim             222.0
+AllD             188.0
+SuspiciousTFT    175.0
+
+Grim trigger sustains cooperation iff discount factor >= (T-R)/(T-P) = 0.500
+  delta=0.3: cooperate=4.29 vs deviate=5.43 -> defect
+  delta=0.5: cooperate=6.00 vs deviate=6.00 -> cooperate
+  delta=0.9: cooperate=30.00 vs deviate=14.00 -> cooperate
+
+======================================================================
+COOPERATIVE GAME - Shapley value for threat-intelligence sharing
+======================================================================
+Shapley allocation: {'BankA': 30.0, 'BankB': 40.0, 'BankC': 50.0} | total = 120.0
+Allocation in the core? True
+
+Figures saved in ./outputs/
